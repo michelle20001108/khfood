@@ -1,158 +1,431 @@
-# light
-<!--連結 jQuery Mobile -->    
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-<!-- 設定Favicon -->
-<link rel="shortcut icon" href="image/favicon.ico.ico">
-<link rel="bookmark" href="image/favicon.ico.ico">
-
-
-
-<title>燈燈的一天</title>
-<link rel="stylesheet" href="style.css">
-<!-- 主頁 -->
-<div data-role="page" id="page00">
-
-    <div data-role="header">
-        <h1 style='color: rgb(107, 6, 6);'>小燈的一天(首頁)</h1>
-        <a href="#aboutus" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right">搜索</a>
-    </div><!-- /header -->
-
-    <div role="main" class="ui-content">
-        <p>Hello 我就是顆燈 \(._.)>></p>
-        <img src="image/light.png">
-
-        <div data-role="collapsible">
-            <h1>cheese</h1>
-            <p>起司的種類</p>
-            <div data-role="collapsible">
-            <h1>藍黴乳酪</h1>
-            <p>是種濃郁的乳酪!</p>
-            </div>
-            </div>
+# Cheese
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <p> 第1頁 </p>
-        <a href="#page01" class="ui-btn ui-corner-all ui-icon-carat-r ui-btn-icon-notext" >    第1頁    </a>
-        <a href="#aboutus" class="ui-btn ui-icon-info ui-btn-icon-left" data-transition="flip">    關於我們     </a>
+    <!--連結 jQuery Mobile -->    
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@1,600&family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@900&family=Noto+Serif:ital,wght@1,700&family=Playfair+Display:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@1,600&family=Noto+Sans+TC:wght@400;500&family=Noto+Serif:ital,wght@1,700&family=Playfair+Display:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+    <style>
+        #image{
+            max-width: 100%;
+        }
+        .ui-body-c, .ui-header {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .ui-footer {
+            font-family: 'Playfair Display', serif;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 
-    </div><!-- /content -->
+    <!-- 設定Favicon -->
+    <link rel="shortcut icon" href="image/1604495305.ico">
+    <link rel="bookmark" href="image/1604495305.ico">
+
+    <link rel="stylesheet" href="themes/L.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+   
+
+
+    <title>Say cheese</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <style>
+
+        #page00 img{
+            max-width: 100%;
+        }
+        #page01 img{
+            max-width: 100%;
+        }
+        #page02 img{
+            max-width: 100%;
+        }
+        #page03 img{
+            max-width: 100%;
+        }
+        #page04 img{
+            max-width: 100%;
+        }
+        #page05 img{
+            max-width: 100%;
+        }
+
+        .video-wrapper{
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <!-- 主頁 -->
+    <div data-role="page" id="page00">
+ 
+        <div data-role="header">
+            <h1 style='color: rgb(107, 6, 6);'>Say Cheese ~</h1>
+            <a href="#aboutus" class="ui-btn ui-icon-info ui-btn-icon-left">關於我們</a>            
+           
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content">
+            <h2>Tonight, I want to order some... cheese?</h2>
+            <img src="https://images.pexels.com/photos/4087609/pexels-photo-4087609.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260/1024/600" alt="">
+                  <ul data-role="listview" data-inset="true">
+                    <li>
+                      <a href="#page01">
+                      <img src="image/SAYCHEESE.png">
+                      <h2>起司種類</h2>
+                      <p>讓我們來認識起司吧~</p>
+                      </a></li>
+                    <li>
+                      <a href="#page02">
+                      <img src="image/C.png">
+                      <h2>起司在瑞士</h2>
+                      <p>你知道起司王國--瑞士  有什麼有趣的小故事嗎?</p>
+                      </a></li>
+                    <li>
+                        <a href="#page03">
+                        <img src="image/p.png">
+                        <h2>起司料理</h2>
+                        <p>來看看起司做成的各種料理吧!</p>
+                        </a></li>
+                      <li>
+                        <a href="#page04">
+                        <img src="image/shop.png">
+                        <h2>在台灣的起司店</h2>
+                        <p>分享我首次在起司店購買的經歷</p>
+                        </a></li>
+                  </ul>              
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed">
+            
+            <div data-role="navbar">
+            <ul>
+                <li><a href="#page04" data-icon="ui-btn ui-icon-arrow-l ui-btn-icon-right">上一頁</a></li>
+                <li><a href="#page01" data-icon="ui-btn ui-icon-arrow-r ui-btn-icon-right">下一頁</a></li>
+                <li><a href="#page05" data-icon="ui-btn ui-corner-all ui-icon-action" data-transition="slidedown">其他連結</a></li>
+            </ul>
+        </div>
+            <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+
+    <!-- 第一分頁 -->
+    <div data-role="page" id="page01">
+ 
+        <div data-role="header">
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">首頁</a>
+            <h1 style='color: rgb(68, 65, 245);'>起司種類</h1>
+        </div><!-- /header -->
+ 
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3-PfywiJBPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         
-    <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
-    </div><!-- /footer -->
+        <div role="main" class="ui-content">            
+            <h1>常見的 7 大種類起司</h1>
+            <h2>硬質起司 Hard Cheese</h2>
+            <h3>含水量最低，大約30～40％，鹹度較高。熟成期較長，至少需要半年以上、最長達兩年，可以長久保存。</h3>
+            <img src="image/hard.jpg">
+            <div data-role="collapsible">
+                <h1>台灣常見種類</h1>
+                <p>Cheddar、Parmesan、Parmigiano Cheese</p>
+                </div>
+            <div data-role="collapsible">
+                <h1>速配料理</h1>
+                <p>因為鹹度高、口感厚實，一般常刨成粉狀，加在沙拉、義大利麵上面，添加食物的風味，有時也會拿來做起士火鍋</p>
+                </div>
+            <h2>半硬質起司 Semi-Hard Cheese</h2>
+            <h3>最常見、接受度也最高的Cheese種類，味道溫和沒有刺激感，是入門者的最佳選擇。</h3>
+            <img src="image/semi.jpg">
+            <div data-role="collapsible">
+                <h1>台灣常見種類</h1>
+                <p>Vincent、Gouda、Edam Cheese</p>
+                </div>
+            <div data-role="collapsible">
+                <h1>速配料理</h1>
+                <p>切片後可直接搭配酒類、茶類品嘗，容易入口，或是刨片、切丁入菜都很合適，用途極廣。</p>
+                </div>
+            <h2>羊奶起司 Chever Cheese</h2>
+            <h3>羊奶製成，可說是歷史最古老的起士，乾燥熟成的製法讓質地較硬，體積也都不會太大。</h3>
+            <img src="image/sheep.jpg">
+            <div data-role="collapsible">
+                <h1>台灣常見種類</h1>
+                <p>Chevrette Cheese</p>
+                </div>
+            <div data-role="collapsible">
+                <h1>速配料理</h1>
+                <p>因為細分種類還是有很多種，所以用途極廣，最常見的是加在沙拉裡吃</p>
+                </div>
+            <h2>水洗式起司 Washed Rind Cheese</h2>
+            <h3>熟成過程中必須用鹽水不停地洗表皮，過程中表皮的菌體會發酵，最後產生一股略顯刺鼻的味道，味道十分濃厚。</h3>
+            <img src="image/water.jpg">
+            <div data-role="collapsible">
+                <h1>台灣常見種類</h1>
+                <p>Taleggio Cheese</p>
+                </div>
+            <div data-role="collapsible">
+                <h1>速配料理</h1>
+                <p>外國人的吃法通常會直接配酒，以品嘗它的獨特氣味，台灣人較難適應此味道，所以會用在加熱料理上，降低氣味的衝擊</p>
+                </div>
+            <h2>白黴起司 White Mould Cheese</h2>
+            <h3>製作過程中將新鮮起司一直翻轉、去除水分，等到變成較硬的豆腐狀，再把白黴加在表面，能夠讓口感吃起來變得柔滑、內部呈現膏狀，而且奶味比較重。</h3>
+            <img src="image/wite.jpg">
+            <div data-role="collapsible">
+                <h1>台灣常見種類</h1>
+                <p>Camembert、Brie Cheese</p>
+                </div>
+            <div data-role="collapsible">
+                <h1>速配料理</h1>
+                <p>因為口感較柔順，可以直接搭配水果、紅酒、咖啡一起吃</p>
+                </div>
+            
+            <h2>藍黴起司 Blue Cheese</h2>
+            <h3>跟白黴起司最大的差別是從內部開始熟成，所以切開時可看到青藍色的黴菌不滿Cheese內部，鹹味重、氣味刺激。</h3>
+            <img src="image/bc.jpg">
+            <div data-role="collapsible">
+                <h1>台灣常見種類</h1>
+                <p>Gorgonzola Cheese</p>
+                </div>
+            <div data-role="collapsible">
+                <h1>速配料理</h1>
+                <p>常會加在義大利麵醬、沙拉醬料中使用，或是添加在新鮮的沙拉裡，直接配茶也是一種吃法。</p>
+                </div>
+            <h2>新鮮軟質起士 Fresh Cheese</h2>
+            <h3>沒有經過熟成的過程，牛奶凝結之後去掉水分，還有奶香味的Cheese，質地其實很像優格，建議在第一時間就吃完。</h3>
+            <img src="image/fresh.jpg">
+            <div data-role="collapsible">
+                <h1>台灣常見種類</h1>
+                <p>Mozzarella、Mascorpone、Cream Cheese</p>
+                </div>
+            <div data-role="collapsible">
+                <h1>速配料理</h1>
+                <p>新鮮軟度佳、沒有鹹度，通常可以直接入菜拌沙拉吃，切片或是切丁都很合適，如優格的吃法拌入新鮮水果、果醬，甜食吃法也不錯。 Cream Cheese則常加在焗烤料理中。</p>
+                </div>
+                <a href="#page05" class="ui-btn ui-icon-action ui-btn-icon-left">其他連結</a>
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed">
 
-</div><!-- /page -->
-
-<!-- 第一分頁 -->
-<div data-role="page" id="page01">
-
-    <div data-role="header">
-        <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
-        <h1 style='color: rgb(68, 65, 245);'>小燈的一天 p.1</h1>
-        <a href="#aboutus" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right">搜索</a>
-    </div><!-- /header -->
-
-    <div role="main" class="ui-content">
-        <p>Good night ~ ~ 要關燈囉囉 ! !  zzz(-"-)zzzzzz</p>
-        <img src="image/turn off.png">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page02" data-icon="bullets">起司在瑞士</a></li>
+                    <li><a href="#page03" data-icon="bullets">起司料理</a></li>
+                    <li><a href="#page04" data-icon="bullets">在台灣的起司店</a></li>
+                    <li><a href="#aboutus" data-icon="bullets" data-transition="slidedown">關於我們</a></li>
+                </ul>
+            </div>
         
-        <p> 第2頁 </p>
-        <a href="#page02" class="ui-btn ui-corner-all ui-icon-carat-r ui-btn-icon-notext" >    第2頁    </a>
-        <a href="#aboutus" class="ui-btn ui-icon-info ui-btn-icon-left" data-transition="flip">    關於我們     </a>
+            <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
 
-    </div><!-- /content -->
+    <!-- 第二分頁 -->
+    <div data-role="page" id="page02">
+ 
+        <div data-role="header">
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">首頁</a>
+            <h1 style='color: rgb(255, 86, 86);'>起司在瑞士</h1>
+            <a href="#page05" class="ui-btn ui-corner-all ui-icon-action ui-btn-icon-left">其他連結</a>
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content">
+            <h2>起司節</h2>
+            <p>每到5旬節在英格蘭西南部格魯斯特郡（Gloucestershire）的古柏山丘上頭，一顆藍紅緞帶裝飾的圓起司從幾近垂直的山頭快速滾下，後頭一群男子們連滾帶爬的追逐著，當圓起司衝破終點線，有個男子箭步追上，觀望的民眾們終於從緊張轉為歡呼，滾起司大賽的冠軍就此產生！</p>
+           <img src="image/R montan.jpg">
+           <h2>瑞士起司鍋</h2>
+           <p>幾世紀前瑞士人以乾燥法保存麵包和起司，冬天時乾掉的起司添酒加熱成液狀，再以乾掉的麵包蘸取食用，這就是起司風度鍋的起源。19世紀時，瑞士商人為了推廣瑞士起司和酒大力提倡起司鍋，1955年所謂的即溶起司鍋材料正式登場。
+            一般而言，起司醬的材料比例為100毫升的不甜白酒搭配200公克的起司，有些地方會再添加少許櫻桃白蘭地（kirsch）。所使用的起司以半硬質（如艾蒙達起司）和硬質（如格魯耶爾起司）為主。比例隨個人喜好，不要偏差太大即可。</p>
+            <img src="image/cheesefire.jpg" alt="">
+           <div data-role="navbar">
 
-    <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
-    </div><!-- /footer -->
-
-</div><!-- /page -->
-
-<!-- 第二分頁 -->
-<div data-role="page" id="page02">
-
-    <div data-role="header">
-        <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
-        <h1 style='color: rgb(238, 34, 204);'>小燈的一天 p.2</h1>
-        <a href="#aboutus" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right">搜索</a>
-    </div><!-- /header -->
-
-    <div role="main" class="ui-content">
-        <p>｢ 我不是美食 ! ! m@w@m OMG~ (驚醒)」</p>
-        <img src="image/omg.png">
-        <p> 第1頁</p>
-        <a href="#page01" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext">第1頁</a>
-        <p> 第3頁 </p>
-        <a href="#page03" class="ui-btn ui-corner-all ui-icon-carat-r ui-btn-icon-notext" >    第3頁    </a>
-        <a href="#aboutus" class="ui-btn ui-icon-info ui-btn-icon-left" data-transition="flip">    關於我們     </a>
-
-    </div><!-- /content -->
-
-    <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
-    </div><!-- /footer -->
-
-</div><!-- /page -->
-
-
-<!-- 第三分頁 -->
-<div data-role="page" id="page03">
-
-    <div data-role="header">
-        <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
-        <h1 style='color: rgb(57, 179, 0);'>小燈的一天 p.3</h1>
-        <a href="#aboutus" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right">搜索</a>
-    </div><!-- /header -->
-
-    <div role="main" class="ui-content">
-        <p>原來一切都是一場夢(汗... o~o:::</p>
-        <img src="image/hahaha.png">
-        <p> 第2頁</p>
-        <a href="#page02" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext">第2頁</a>
-        <p> 第4頁 </p>
-        <a href="#page04" class="ui-btn ui-corner-all ui-icon-carat-r ui-btn-icon-notext" >    第4頁    </a>
-        <a href="#aboutus" class="ui-btn ui-icon-info ui-btn-icon-left" data-transition="flip">    關於我們     </a>
-
-    </div><!-- /content -->
-
-    <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
-    </div><!-- /footer -->
-
-</div><!-- /page -->
-
-
-<!-- 第四分頁 -->
-<div data-role="page" id="page04">
-
-    <div data-role="header">
-        <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
-        <h1 style='color: rgb(255, 148, 86);'>小燈的一天 p.4</h1>
-        <a href="#aboutus" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right">搜索</a>
-    </div><!-- /header -->
-
-    <div role="main" class="ui-content">
-        <p>來去各地旅遊吧~~</p>
-        <img src="image/cat light.png">
+        </div>
         
-        <p> 第3頁</p>
-        <a href="#page03" class="ui-btn ui-corner-all ui-icon-carat-l ui-btn-icon-notext">第3頁</a>
-        <a href="#aboutus" class="ui-btn ui-icon-info ui-btn-icon-left" data-transition="flip">    關於我們     </a>
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed">
 
-    </div><!-- /content -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page01" data-icon="bullets">起司種類</a></li>
+                    <li><a href="#page03" data-icon="bullets">起司料理</a></li>
+                    <li><a href="#page04" data-icon="bullets">在台灣的起司店</a></li>
+                    <li><a href="#aboutus" data-icon="bullets" data-transition="slidedown">關於我們</a></li>
+                </ul>
+            </div>
+
+            <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+
+
+    <!-- 第三分頁 -->
+    <div data-role="page" id="page03">
+ 
+        <div data-role="header">
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">首頁</a>
+            <h1 style='color: rgb(57, 179, 0);'>起司料理</h1>
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content">
+            <h2>起司鍋</h2>
+            <p>起司火鍋是瑞士各類火鍋中，最具傳統性也是最受歡迎的。正統的起司鍋湯底要用白酒熬煮，再放入特定的起司加熱至濃稠狀，有的地方會添加佐味的香料，包括櫻桃酒、大蒜、洋蔥，甚至是磨菇。吃的時候，先把麵包撕成小塊，然後用叉子叉上一小塊麵包，放入起司鍋內沾著熱起司吃；也可以用馬鈴薯取代麵包，另具獨特的風味口感。</p>
+            <img src="image/cf.jpg">
+            <h2>烤起司</h2>
+            <p>烤起司可是瑞士人的最愛呢！如果說Fondue是煮起司的話，那Raclette就是把起司烤來吃了。Raclette是將切片的起司放在烤盤上加熱融化，再把它淋在麵包上或是馬鈴薯上食用。有的地區會搭配醃酸黃瓜或洋蔥一起吃，也可以灑點胡椒調味。</p>
+            <img src="image/cp.jpg" alt="">
+            <h2>煎馬鈴薯</h2>
+            <p>這道馬鈴薯餅是瑞是最普遍的家常菜之一；它先是把馬鈴薯煮熟之後，削成片狀再油煎來食用。通常要煎到有點焦焦的咖啡色，咬起來才會有脆硬的誘人口感。在瑞士的餐廳裡，還有多種口味可供選擇；搭配煎蛋或是火腿，也是很受歡迎的組合。超市裡有賣現成的調理包，每個人都可以買回家自己煎來吃，非常方便。</p>
+            <img src="image/cg.jpg" alt="">
+            <h2>玉米糕</h2>
+            <p>玉米糕在南部的義大利語區是很家常的一道菜餚。作法是把玉米磨成粉末狀，再加上水、鹽巴、牛奶調煮而成。最普遍的吃法是切成塊煎來吃，通常會搭配燉肉等菜餚，或是淋上醬汁一起食用。</p>
+            <img src="image/polenta.jpg" alt="">
+
+        
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed">
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page01" data-icon="bullets">起司種類</a></li>
+                    <li><a href="#page02" data-icon="bullets">起司在瑞士</a></li>
+                    <li><a href="#page04" data-icon="bullets">在台灣的起司店</a></li>
+                    <li><a href="#aboutus" data-icon="bullets" data-transition="slidedown">關於我們</a></li>
+                </ul>
+            </div>
+            <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+
+    
+    <!-- 第四分頁 -->
+    <div data-role="page" id="page04">        
+        <div data-role="header">
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">首頁</a>
+            <h1 style='color: rgb(255, 148, 86);'>首次買起司的經歷</h1>
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content">
+            <h2>馬弟瓦特</h2>
+            <img src="image/maammia.jpg">
+            <p>我與家人第一次嘗試挑選乳酪的地方就是在馬弟瓦特，通常我們都是在家樂福或是7-11購買起司，而且幾乎都是買小包裝的片狀起司
+                ，所以當我們正式到乳酪店時，眼前盡是琳瑯滿目的起司，經過店員詳細解說，我們也挑選出自己最想嘗試的起司，總共買了兩種: (因為起司都是秤重的，單價真的不便宜)
+                我與弟弟挑選的是較適合做成焗烤的艾登乳酪，外觀是有一層紅色的蠟，要剝開才能食用;</p>
+            <img src="image/id.jpg">
+            <p> 而媽媽則是選了藍黴乳酪，藍黴乳酪是利用青黴菌與牛奶發酵而成，在這之前我媽媽完全沒聽過藍黴乳酪，只是因為店員說這種入落口味較濃郁，因此出於好奇就直接選擇了它</p>
+            <img src="image/blue chsses.jpg">
+            <p>我們都認為這是一個大膽的嘗試，也都只敢遠看不敢褻玩焉，沒想到媽媽竟然真的特別喜歡藍黴乳酪的風味，經過了好幾天，我也抗拒不了好奇心想品嘗藍黴乳酪到弟是什麼滋味，雖然第一口嚐起來有一種非常強烈的鹹香味，但習慣了之後，就會品嘗到藍黴乳酪那種沙沙的口感，真的蠻獨特的</p>
+            <img src="image/Blue.jpg" alt="">
+        
+
+
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed">
+
+            <div data-role="navbar">
+
+                <ul>
+                    <li><a href="#page01" data-icon="bullets">起司種類</a></li>
+                    <li><a href="#page02" data-icon="bullets">起司在瑞士</a></li>
+                    <li><a href="#page03" data-icon="bullets">起司料理</a></li>
+                    <li><a href="#aboutus" data-icon="bullets" data-transition="slidedown">關於我們</a></li>
+                </ul>
+
+            </div>
+            <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+
+    <!-- 第五分頁 -->
+    <div data-role="page" id="page05">
+ 
+        <div data-role="header">
+            <a href="#page00" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">首頁</a>
+            <h1 style='color: rgb(57, 179, 0);'>其他連結</h1>
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content">
+            <h2>乳酪職人</h2>
+            <p>台灣手工乳酪，可線上訂購 ~ `(' ˇ ')ˊ</p>
+            <img src="image/original.jpg" alt="">
+            <a href="https://www.didacheese.com/" target="https://www.didacheese.com/" title="乳酪職人">乳酪職人官網</a>
+
+            <h2>Man Mano慢慢弄‧乳酪坊</h2>
+            <p>店內時常有開"手做起司課"，也可以線上預購起司喔!</p>
+            <img src="image/snale.jpg" alt="">
+            <a href="https://www.facebook.com/lab.manmano/" target="https://www.facebook.com/lab.manmano/" title="Man Mano慢慢弄‧乳酪坊">Man Mano慢慢弄‧乳酪坊 FB連結</a>
+
+            <h2>GoodWell固德威美食生活家</h2>
+            <p>以乳酪為起點~運用到美食生活方面</p>
+            <img src="image/gw.png" alt="">
+            <a href="https://www.goodwell.tw/html/index.aspx" target="https://www.goodwell.tw/html/index.aspx" title="goodwell">GoodWell固德威美食生活家官網</a>
+        
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed">
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page01" data-icon="bullets">起司種類</a></li>
+                    <li><a href="#page02" data-icon="bullets">起司在瑞士</a></li>
+                    <li><a href="#page03" data-icon="bullets">起司料理</a></li>
+                    <li><a href="#page04" data-icon="bullets">在台灣的起司店</a></li>
+                    <li><a href="#aboutus" data-icon="bullets" data-transition="slidedown">關於我們</a></li>
+                </ul>
+            </div>
+            <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
 
     <!-- 關於我們 -->
     <div data-role="page" id="aboutus" data-dialog="true">
  
         <div data-role="header">
-            <h1 style='color: rgb(98, 30, 255);'>關於我們</h1>
+            <h1 style='color: rgb(255, 148, 86);'>關於我們</h1>
         </div><!-- /header -->
  
         <div role="main" class="ui-content">
-            <h1>We are...</h1>
-            <p>Welcome to us... we are........</p>
+            <h1>如果想了解更多有關乳酪，敬請關注我們的官網，不定時將會更新內容喔!</h1>
+            <p></p>
 
         </div><!-- /content -->
  
@@ -162,8 +435,6 @@
  
     </div><!-- /page -->
 
-    <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 1108211027@gap.wzu.tw DCAM</h4>
-    </div><!-- /footer -->
 
-</div><!-- /page -->
+</body>
+</html>
